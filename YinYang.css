@@ -1,0 +1,47 @@
+body {
+	background:gray;
+	width:400px;
+	margin:auto;
+	padding-top:227px;
+	padding-left:225px;
+}
+.yin-yang{
+	height:50px;
+	width:100px;
+	background:#ffffff;
+	border:solid #000000;
+	border-width: 2px 2px 52px 2px;
+	border-radius:50%;
+	position:relative;
+	animation:rotate 4s linear infinite;
+}
+
+.yin-yang:before{
+	content:"";
+	position: absolute;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	background:#000000;
+	border:19px solid #ffffff;
+	top:50%;
+	left:50%;
+		
+}
+.yin-yang:after{
+	content:"";
+	position:absolute ;
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	background:#ffffff;
+	border:19px solid #000000;
+	top:50%;
+	right:50%;
+}
+@keyframes rotate{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+	
+	
